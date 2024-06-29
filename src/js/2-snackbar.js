@@ -22,7 +22,7 @@ function handlerForm(event) {
 
   promise
     .then(res => {
-      iziToast.error({
+      iziToast.show({
         title: '✅ Ok',
         message: `Fulfilled promise in ${delay} ms`,
         backgroundColor: '#59a10d',
@@ -33,7 +33,7 @@ function handlerForm(event) {
       });
     })
     .catch(rej => {
-      iziToast.error({
+      iziToast.show({
         title: '❌ Error',
         message: `Rejected promise in ${delay} ms`,
         backgroundColor: '#ef4040',
